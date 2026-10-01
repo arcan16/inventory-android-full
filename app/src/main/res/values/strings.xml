@@ -1,0 +1,348 @@
+<resources>
+    <string name="app_name">ComexBeta</string>
+
+    <!-- Login -->
+    <string name="login_app_title">Inventarios y Stock</string>
+    <string name="login_app_subtitle">Comex Anáhuac</string>
+    <string name="login_username_label">Usuario</string>
+    <string name="login_password_label">Contraseña</string>
+    <string name="login_username_hint">Usuario</string>
+    <string name="login_submit">Iniciar sesión</string>
+    <string name="login_loading">Iniciando sesión…</string>
+    <string name="login_server_footer_configured">Servidor: %1$s · Configurar</string>
+    <string name="login_server_footer_unconfigured">Sin servidor configurado · Configurar</string>
+    <string name="login_error_username_required">Escribe tu usuario</string>
+    <string name="login_error_password_required">Escribe tu contraseña</string>
+    <string name="login_error_server_required">Configura primero el servidor</string>
+    <string name="login_error_invalid_credentials">Usuario o contraseña incorrectos</string>
+    <string name="login_error_network">No fue posible conectar con el servidor: %1$s</string>
+
+    <!-- Configurar servidor -->
+    <string name="server_config_title">Configurar servidor</string>
+    <string name="server_config_subtitle">Red local · sin dominio</string>
+    <string name="server_config_explainer">La app se conecta directo a la IP del backend dentro del Wi-Fi del almacén. Actualiza este dato cada vez que el servidor cambie de red.</string>
+    <string name="server_config_ip_label">Dirección IP</string>
+    <string name="server_config_port_label">Puerto</string>
+    <string name="server_config_ip_hint">192.168.1.72</string>
+    <string name="server_config_url_label">URL resultante</string>
+    <string name="server_config_url_empty">—</string>
+    <string name="server_config_test">Probar conexión</string>
+    <string name="server_config_testing">Probando…</string>
+    <string name="server_config_status_ok">Conectado · %1$d ms</string>
+    <string name="server_config_status_bad_response">El servidor respondió con error (%1$d)</string>
+    <string name="server_config_status_unreachable">No fue posible conectar: %1$s</string>
+    <string name="server_config_saved_networks">Redes guardadas</string>
+    <string name="server_config_save">Guardar y continuar</string>
+    <string name="server_config_error_ip_required">Escribe la dirección IP del servidor</string>
+    <string name="server_config_saved_toast">Servidor guardado</string>
+
+    <!-- Navegación / genérico -->
+    <string name="nav_back">Atrás</string>
+    <string name="nav_menu">Menú</string>
+    <string name="nav_more">Más opciones</string>
+    <string name="nav_add">Agregar</string>
+
+    <!-- Home -->
+    <string name="home_title">Inicio</string>
+    <string name="home_logout_action">Cerrar sesión</string>
+    <string name="home_logout_dialog_title">Cerrar sesión</string>
+    <string name="home_logout_dialog_message">¿Seguro que quieres cerrar sesión?</string>
+    <string name="home_logout_dialog_confirm">Cerrar sesión</string>
+    <string name="action_cancel">Cancelar</string>
+    <string name="home_tile_inventories">Inventarios</string>
+    <string name="home_tile_inventories_desc">Conteos físicos</string>
+    <string name="home_tile_reports">Reportes</string>
+    <string name="home_tile_reports_desc">Resumen por fecha</string>
+    <string name="home_tile_products">Productos</string>
+    <string name="home_tile_products_desc">Catálogo</string>
+    <string name="home_tile_stock">Stock</string>
+    <string name="home_tile_stock_desc">Por presentación</string>
+    <string name="nav_bottom_home">Inicio</string>
+    <string name="nav_bottom_reports">Reportes</string>
+    <string name="nav_bottom_products">Productos</string>
+    <string name="nav_bottom_stock">Stock</string>
+
+    <!-- Inventarios -->
+    <string name="inventories_title">Inventarios</string>
+    <string name="inventories_col_presentation">Presentación</string>
+    <string name="inventories_col_date">Fecha</string>
+    <string name="inventories_menu_guided">Conteo guiado</string>
+    <string name="inventories_menu_close">Cerrar inventario</string>
+    <string name="inventories_menu_delete">Eliminar</string>
+    <string name="inventories_empty">No hay inventarios registrados</string>
+    <string name="inventories_load_error">No fue posible cargar los inventarios</string>
+    <string name="inventories_retry">Reintentar</string>
+    <string name="inventories_delete_confirm_title">Eliminar inventario</string>
+    <string name="inventories_delete_confirm_message">¿Seguro que quieres eliminar el inventario %1$s? Esta acción no se puede deshacer.</string>
+    <string name="inventories_deleted_toast">Inventario eliminado</string>
+    <string name="inventories_delete_error">No fue posible eliminar el inventario: %1$s</string>
+    <string name="inventories_close_confirm_title">Cerrar inventario</string>
+    <string name="inventories_close_confirm_message">¿Seguro que quieres cerrar el inventario %1$s? Ya no se podrán registrar más conteos en él.</string>
+    <string name="inventories_closed_toast">Inventario cerrado</string>
+    <string name="inventories_close_error">No fue posible cerrar el inventario: %1$s</string>
+    <string name="inventories_status_opened">Abierto</string>
+    <string name="inventories_status_locked">Bloqueado</string>
+    <string name="inventories_status_pending">Pendiente</string>
+    <string name="inventories_status_closed">Cerrado</string>
+    <string name="inventories_closed_open_title">Inventario cerrado</string>
+    <string name="inventories_closed_open_message">El inventario %1$s está cerrado. ¿Deseas abrirlo nuevamente?</string>
+    <string name="inventories_reopen_confirm">Abrir de nuevo</string>
+    <string name="inventories_reopened_toast">Inventario reabierto</string>
+    <string name="inventories_reopen_error">No fue posible reabrir el inventario: %1$s</string>
+    <string name="inventories_locked_title">Inventario bloqueado</string>
+    <string name="inventories_locked_by_message">El inventario %1$s lo está usando %2$s en este momento. Se libera cuando sale del conteo.</string>
+    <string name="inventories_locked_other_device_message">El inventario %1$s está abierto en otro dispositivo con tu usuario. Se libera cuando sale del conteo en ese dispositivo.</string>
+    <string name="count_locked_by_other_title">Inventario en uso</string>
+    <string name="inventories_locked_message">El inventario %1$s no se puede abrir porque se está utilizando en este momento.</string>
+    <string name="action_accept">Entendido</string>
+    <string name="inventories_session_expired">Tu sesión expiró, inicia sesión de nuevo</string>
+
+    <!-- Cargar inventario -->
+    <string name="upload_title">Cargar inventario</string>
+    <string name="upload_subtitle">Reporte de existencias</string>
+    <string name="upload_dropzone_placeholder_title">Selecciona el reporte de existencias (.csv)</string>
+    <string name="upload_dropzone_placeholder_meta">Toca para buscar en tu dispositivo</string>
+    <string name="upload_dropzone_selected_meta">%1$s · toca para cambiar</string>
+    <string name="upload_submit">Procesar y crear inventario</string>
+    <string name="upload_submit_loading">Procesando…</string>
+    <string name="upload_result_title">Inventario #%1$d creado</string>
+    <string name="upload_result_body">Presentación %2$s\n%1$d filas procesadas · %3$d productos nuevos\n%4$d registros de stock</string>
+    <string name="upload_error_not_csv">Selecciona un archivo .csv válido</string>
+    <string name="upload_error_read_file">No fue posible leer el archivo: %1$s</string>
+    <string name="upload_error_generic">No fue posible procesar el inventario: %1$s</string>
+    <string name="upload_error_server_required">Configura primero el servidor</string>
+
+    <!-- Conteo normal -->
+    <string name="count_normal_title">Conteo físico</string>
+    <string name="toggle_number">Número</string>
+    <string name="toggle_text">Texto</string>
+    <string name="toggle_barcode">Barras</string>
+    <string name="count_code_label">Código</string>
+    <string name="count_detail_record">Registro de conteo #%1$d</string>
+    <string name="count_detail_id">Id %1$s</string>
+    <string name="count_detail_place_label">Ubicación</string>
+    <string name="count_detail_close">Cerrar</string>
+    <string name="count_detail_action">Ver detalle</string>
+    <string name="count_hold_hint">Mantén presionado 1 s para ver el detalle. Toca una vez para editar.</string>
+    <string name="count_finish_action">Finalizar conteo</string>
+    <string name="count_finish_confirm_title">Finalizar conteo</string>
+    <string name="count_finish_confirm_message">Se cerrará el inventario %1$s y ya no se podrán registrar más conteos en él. Podrás reabrirlo desde la lista de inventarios.</string>
+    <string name="count_finish_confirm_action">Finalizar</string>
+    <string name="count_finish_success">Conteo finalizado</string>
+    <string name="count_finish_error">No fue posible finalizar el conteo: %1$s</string>
+    <string name="count_barcode_label">Código de barras</string>
+    <string name="count_barcode_hint">Escanea o escribe el código</string>
+    <string name="count_barcode_scanning_hint">Escaneando… toca para cancelar</string>
+    <string name="count_barcode_found">%1$s · %2$s</string>
+    <string name="count_barcode_found_id">Id %1$s · %2$s</string>
+    <string name="count_barcode_mismatch">El código %1$s es de %2$s · %3$s en %4$s. Este inventario es de %5$s; revisa que tomaste el envase correcto.</string>
+    <string name="count_barcode_discard">Descartar lectura</string>
+    <string name="count_barcode_discard_short">Descartar</string>
+    <string name="count_barcode_use_anyway">Contar %1$s de todos modos</string>
+    <string name="count_barcode_unknown">El código %1$s no está registrado en ninguna presentación.</string>
+    <string name="count_barcode_assign">Asignar a un producto</string>
+    <string name="count_barcode_assign_title">Asignar código de barras</string>
+    <string name="count_barcode_assign_message">Se asignará el código %1$s a %2$s · %3$s en %4$s.</string>
+    <string name="count_barcode_assign_action">Asignar</string>
+    <string name="count_barcode_assigned">Código asignado a %1$s · %2$s</string>
+    <string name="count_barcode_assign_error">No fue posible asignar el código: %1$s</string>
+    <string name="count_barcode_lookup_error">No fue posible buscar el código: %1$s</string>
+    <string name="count_barcode_unresolved">Busca el código de barras antes de agregar</string>
+    <string name="count_search_product">Buscar producto por nombre</string>
+    <string name="count_stock_label">Stock</string>
+    <string name="count_quantity_label">Cantidad</string>
+    <string name="count_difference_label">Diferencia</string>
+    <string name="count_add">Agregar</string>
+    <string name="count_cancel">Cancelar</string>
+    <string name="count_summary_button">Resumen</string>
+    <string name="count_col_id">Id</string>
+    <string name="count_col_quantity">Cantidad</string>
+    <string name="count_col_action">Acción</string>
+    <string name="count_normal_unknown_code">El código no se encuentra registrado</string>
+    <string name="count_normal_no_counts_yet">Todavía no hay conteos registrados</string>
+    <string name="count_search_registered_hint">Buscar en conteos registrados</string>
+    <string name="count_search_no_results">Ningún conteo coincide con la búsqueda</string>
+    <plurals name="count_search_results">
+        <item quantity="one">%d registro encontrado</item>
+        <item quantity="other">%d registros encontrados</item>
+    </plurals>
+    <string name="count_normal_load_error">No fue posible cargar los datos del inventario</string>
+    <string name="count_place_label">Lugar</string>
+    <string name="count_add_loading">Agregando…</string>
+    <string name="count_add_success">Producto agregado al conteo</string>
+    <string name="count_add_error">No fue posible agregar el producto: %1$s</string>
+    <string name="count_error_code_required">Escribe el código del producto</string>
+    <string name="count_error_unknown_product">Este código no está registrado en el catálogo de productos</string>
+    <string name="count_error_quantity_required">Escribe la cantidad contada</string>
+    <string name="count_error_quantity_positive">La cantidad debe ser mayor a 0</string>
+    <string name="count_delete_confirm_title">Eliminar conteo</string>
+    <string name="count_delete_confirm_message">¿Seguro que quieres eliminar el conteo de %1$s (%2$s)? Esta acción no se puede deshacer.</string>
+    <string name="count_deleted_toast">Conteo eliminado</string>
+    <string name="count_delete_error">No fue posible eliminar el conteo: %1$s</string>
+    <string name="count_update">Actualizar</string>
+    <string name="count_update_loading">Actualizando…</string>
+    <string name="count_update_success">Conteo actualizado</string>
+    <string name="count_update_error">No fue posible actualizar el conteo: %1$s</string>
+    <string name="count_update_partial_error">El conteo anterior se eliminó pero no se pudo crear el actualizado: %1$s. Vuelve a capturarlo.</string>
+    <string name="count_new_product_description_label">Descripción del producto nuevo</string>
+    <string name="count_register_new_product">Registrar y contar</string>
+    <string name="count_register_new_product_loading">Registrando…</string>
+    <string name="count_error_description_required">Escribe la descripción del producto</string>
+    <string name="count_register_new_product_success">Producto registrado y agregado al conteo</string>
+    <string name="count_register_new_product_error">No fue posible registrar el producto: %1$s</string>
+
+    <string-array name="product_location_labels">
+        <item>Piso de venta</item>
+        <item>Almacén</item>
+        <item>Bodega</item>
+        <item>Nota</item>
+    </string-array>
+
+    <!-- Conteo guiado -->
+    <string name="count_guided_title">Conteo guiado</string>
+    <string name="count_guided_previous">Anterior</string>
+    <string name="count_guided_current">Actual</string>
+    <string name="count_guided_next">Siguiente</string>
+    <string name="count_guided_id_label">Id</string>
+    <string name="count_guided_description_label">Descripción</string>
+    <string name="count_guided_btn_prev">‹ Anterior</string>
+    <string name="count_guided_btn_next">Siguiente ›</string>
+    <string name="count_guided_btn_finish">Finalizar</string>
+    <string name="count_guided_btn_loading">Guardando…</string>
+    <string name="count_guided_barcode_hint">Escanea o escribe para verificar</string>
+    <string name="count_guided_barcode_verified">✓ %1$s · %2$s</string>
+    <string name="count_guided_barcode_other_product">El código %1$s es de %2$s · %3$s en %4$s (producto %5$d de %6$d), no del producto actual.</string>
+    <string name="count_guided_barcode_go_to">Ir a %1$s</string>
+    <string name="count_guided_barcode_not_in_stock">El código %1$s es de %2$s · %3$s, que no está en el stock de este inventario. Cuéntalo desde el conteo normal.</string>
+    <string name="count_guided_barcode_assign_current">Asignar a %1$s</string>
+    <string name="count_barcode_assign_other">Elegir otro producto</string>
+    <string name="count_guided_counted_label">Ya contado</string>
+    <string name="count_guided_editing">Editando el conteo de %1$s (%2$s)</string>
+    <string name="count_guided_not_in_sequence">%1$s no está en el recorrido de este inventario; edítalo desde el conteo normal</string>
+    <string name="count_guided_quantity_hint">Cantidad contada</string>
+    <string name="count_guided_progress">Producto %1$d de %2$d</string>
+    <string name="count_guided_load_error">No fue posible cargar los productos del inventario</string>
+    <string name="count_guided_empty">Este inventario no tiene productos en stock para contar</string>
+    <string name="count_guided_save_error">No fue posible guardar el conteo: %1$s</string>
+    <string name="count_guided_finished_toast">Conteo guiado completado</string>
+
+    <!-- Resumen de conteo -->
+    <string name="count_summary_title">Resumen</string>
+    <string name="count_summary_col_id">Id</string>
+    <string name="count_summary_col_stock">Stock</string>
+    <string name="count_summary_col_count">Conteo</string>
+    <string name="count_summary_col_diff">Dif.</string>
+    <string name="count_summary_export">Exportar PDF</string>
+    <string name="count_summary_export_loading">Generando PDF…</string>
+    <string name="count_summary_export_error">No fue posible generar el reporte: %1$s</string>
+    <string name="count_summary_export_open_chooser">Abrir reporte con</string>
+    <string name="count_summary_export_no_viewer">No hay una app instalada para abrir archivos PDF</string>
+    <string name="count_summary_empty">Todavía no hay conteos registrados</string>
+    <string name="count_summary_tab_total">Conteo total</string>
+    <string name="count_summary_tab_differences">Diferencias</string>
+    <string name="count_summary_tab_differences_count">Diferencias (%1$d)</string>
+    <string name="count_summary_no_differences">Sin diferencias: todo lo contado coincide con el stock</string>
+    <string name="count_summary_load_error">No fue posible cargar el resumen del inventario</string>
+    <string name="count_summary_load_more_error">No fue posible cargar mas elementos, desliza para reintentar</string>
+
+    <!-- Reportes -->
+    <string name="reports_title">Reportes</string>
+    <string name="reports_col_date">Fecha</string>
+    <string name="reports_col_presentation">Presentación</string>
+    <string name="reports_download_action">Descargar reporte</string>
+    <string name="reports_empty">Todavía no hay reportes disponibles</string>
+    <string name="reports_load_error">No fue posible cargar los reportes</string>
+    <string name="reports_download_error">No fue posible generar el reporte: %1$s</string>
+    <string name="reports_download_open_chooser">Abrir reporte con</string>
+    <string name="reports_download_no_viewer">No hay una app instalada para abrir archivos PDF</string>
+
+    <!-- Productos -->
+    <string name="products_title">Productos</string>
+    <string name="product_picker_title">Buscar producto</string>
+    <string name="products_loading_more">Cargando más…</string>
+    <string name="products_search_hint">Buscar por código o descripción</string>
+    <string name="products_col_id">Id</string>
+    <string name="products_col_description">Descripción</string>
+    <string name="products_empty">No hay productos registrados</string>
+    <string name="products_load_error">No fue posible cargar los productos</string>
+    <string name="products_load_more_error">No fue posible cargar más productos, desliza para reintentar</string>
+    <string name="product_edit_title">Editar producto</string>
+    <string name="product_presentation_label">Presentación</string>
+    <string name="product_presentations_label">Presentaciones</string>
+    <string name="product_presentation_pick_title">Selecciona la presentación</string>
+    <string name="product_presentations_empty">Este producto no tiene presentaciones registradas. Puedes editar solo su descripción.</string>
+    <string name="product_presentations_load_error">No fue posible cargar las presentaciones: %1$s</string>
+    <string name="product_edit_description_only">Editar descripción</string>
+    <string name="product_barcode_label">Código de barras</string>
+    <string name="product_barcode_hint">Sin código de barras</string>
+    <string name="product_barcode_scan_action">Escanear código de barras</string>
+    <string name="product_barcode_clear_action">Quitar código de barras</string>
+    <string name="product_barcode_clear_pending">Se quitará al guardar</string>
+    <string name="product_barcode_scanning">Apunta la cámara al código de barras…</string>
+    <string name="product_barcode_scan_error">No se pudo iniciar la cámara: %1$s</string>
+    <string name="product_barcode_camera_permission_denied">Se necesita permiso de cámara para escanear</string>
+    <string name="product_edit_save">Guardar</string>
+    <string name="product_edit_error_description_required">Escribe la descripción</string>
+    <string name="product_edit_success">Producto actualizado</string>
+    <string name="product_edit_error">No fue posible guardar los cambios: %1$s</string>
+
+    <!-- Stock -->
+    <string name="stock_title">Stock</string>
+    <string name="stock_tile_buckets">Cubetas</string>
+    <string name="stock_tile_gallons">Galones</string>
+    <string name="stock_tile_liters">Litros</string>
+    <string name="stock_tile_pieces">Piezas</string>
+    <string name="stock_type_title">Stock</string>
+    <string name="stock_type_col_id">Id</string>
+    <string name="stock_type_col_date">Fecha</string>
+    <string name="stock_type_col_presentation">Present.</string>
+    <string name="stock_type_empty">No hay inventarios con esta presentación</string>
+    <string name="stock_type_load_error">No fue posible cargar los inventarios</string>
+    <string name="stock_summary_title">Resumen</string>
+    <string name="stock_summary_filter_hint">Filtrar por descripción…</string>
+    <string name="stock_summary_empty">Este inventario no tiene existencias registradas</string>
+    <string name="stock_summary_filter_empty">Ningún producto coincide con el filtro</string>
+    <string name="stock_summary_load_error">No fue posible cargar el stock del inventario</string>
+
+    <!-- Usuarios -->
+    <string name="users_title">Usuarios</string>
+
+    <!-- Mi cuenta -->
+    <string name="account_title">Mi cuenta</string>
+    <string name="home_account_action">Mi cuenta</string>
+    <string name="account_username_label">Usuario</string>
+    <string name="account_email_label">Correo</string>
+    <string name="account_password_section_title">Cambiar contraseña</string>
+    <string name="account_password_section_hint">Déjalo en blanco si no quieres cambiar tu contraseña actual</string>
+    <string name="account_new_password_label">Nueva contraseña</string>
+    <string name="account_confirm_password_label">Confirmar contraseña</string>
+    <string name="account_save">Guardar cambios</string>
+    <string name="account_save_loading">Guardando…</string>
+    <string name="account_load_error">No fue posible cargar tu información de cuenta</string>
+    <string name="account_error_username_required">Escribe tu usuario</string>
+    <string name="account_error_email_required">Escribe tu correo</string>
+    <string name="account_error_email_invalid">Escribe un correo válido</string>
+    <string name="account_error_password_short">La contraseña debe tener al menos 6 caracteres</string>
+    <string name="account_error_password_mismatch">Las contraseñas no coinciden</string>
+    <string name="account_save_success">Cuenta actualizada</string>
+    <string name="account_save_error">No fue posible guardar los cambios: %1$s</string>
+    <string name="account_username_changed_message">Tu usuario cambió a \"%1$s\". Inicia sesión de nuevo para continuar.</string>
+
+    <!-- Respaldo de datos (exportar / importar) -->
+    <string name="home_tile_backup">Respaldo de datos</string>
+    <string name="home_tile_backup_desc">Exportar o importar todo</string>
+    <string name="backup_title">Respaldo de datos</string>
+    <string name="backup_export_title">Exportar</string>
+    <string name="backup_export_desc">Guarda en un archivo el catálogo, los códigos de barras y todos los inventarios con su stock y conteos. Úsalo como respaldo: si desinstalas la app o borras sus datos, todo lo que no esté respaldado se pierde.</string>
+    <string name="backup_export_action">Exportar respaldo</string>
+    <string name="backup_export_done">Respaldo guardado: %1$d productos, %2$d presentaciones y %3$d inventarios.</string>
+    <string name="backup_export_error">No se pudo exportar: %1$s</string>
+    <string name="backup_import_title">Importar</string>
+    <string name="backup_import_desc">Agrega los datos de un respaldo a los existentes sin borrar nada: los productos y códigos de barras se actualizan y los inventarios se agregan como nuevos. Acepta también los respaldos exportados desde la app cliente (datos del servidor).</string>
+    <string name="backup_import_action">Importar respaldo</string>
+    <string name="backup_import_confirm_title">¿Importar respaldo?</string>
+    <string name="backup_import_confirm_message">El archivo tiene %1$d productos, %2$d presentaciones y %3$d inventarios.\n\nLos inventarios se agregan como nuevos: importar dos veces el mismo archivo los duplica.</string>
+    <string name="backup_import_confirm_action">Importar</string>
+    <string name="backup_import_done">Importación terminada\n• Productos: %1$d nuevos, %2$d actualizados\n• Presentaciones nuevas: %3$d\n• Códigos de barras asignados: %4$d (en conflicto: %5$d)\n• Inventarios agregados: %6$d (stock: %7$d, conteos: %8$d)\n• Renglones omitidos: %9$d</string>
+    <string name="backup_import_error">No se pudo importar: %1$s</string>
+</resources>
